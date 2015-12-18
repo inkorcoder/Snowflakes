@@ -1,0 +1,102 @@
+* {
+	@include box-sizing(border-box);
+	font-family: 'Bangers', cursive;
+	outline: none !important;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	/*overflow: hidden;*/
+}
+
+$red: #F05B2B;
+$green: #5DF02B;
+
+.tr {
+	@include transition(.2s);
+}
+
+.tr1 {
+	@include transition(.1s);
+}
+
+.page-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*min-width: 1000px;*/
+	/*min-height: 500px;*/
+}
+.stats {
+	position: absolute;
+	z-index: 30;
+	width: 400px; height: 110px;
+	bottom: 0; left: 50%;
+	margin-left: -200px;
+	color: rgba(255,255,255,.7);
+	text-align: center;
+	.meters {
+		position: fixed;
+		top: 20px;
+		width: 400px; height: 200px; left: 50%;
+		margin-left: -200px;
+		
+	}
+	.meters span {
+		font-size: 20px;
+	}
+	.meters, .snows {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.snows {
+		margin-right: 20px;
+		span {
+			font-size: 90px;
+		}
+	}
+	span {
+		color: #fff;
+		display: block;
+		font-size: 48px;
+		text-shadow: 0 0 10px #000,  0 0 10px #000;
+	}
+}
+.popup {
+	position: fixed;
+	display: none;
+	color: #fff;
+	background: rgba(0,0,0,.8);
+	z-index: 40;
+	top: 0; left: 0; right: 0; bottom: 0;
+	.info {
+		position: absolute;
+		width: 300px; height: 200px;
+		/*background: #900;*/
+		top: 50%; left: 50%;
+		text-align: center;
+		font-size: 30px;
+		margin: -100px 0 0 -150px;
+		span {
+			display: block;
+			font-size: 50px;
+			margin: 20px 0;
+		}
+		button {
+			background: #111;
+			border: none;
+			color: #fff;
+			font-family: 'Bangers', cursive;
+			font-size: 20px;
+			padding: 20px 30px;
+			cursor: pointer;
+			@include transition(.3s);
+			&:hover {
+				background: #333;
+			}
+		}
+	}
+}

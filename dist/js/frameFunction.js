@@ -1,0 +1,3 @@
+var frameFunction;
+
+frameFunction = function() {};

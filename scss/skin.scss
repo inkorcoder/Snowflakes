@@ -1,0 +1,59 @@
+/* -----------------------------------------------------
+	include function 'calc' and Compass-like mixins
+*/
+
+@import "_config.scss";
+@import "_func.scss";
+@import "_mixins/_mixins.scss";
+
+/* -----------------------------------------------------
+	include default styles, fonts, indents, and so on...
+*/
+
+/*@import "_default/_normalize.scss";*/
+@import "_default/_default.scss";
+@import "_default/_fonts.scss";
+@import "_default/_indents.scss";
+
+/* -----------------------------------------------------
+	<HEADER> styles
+*/
+
+@import "_pages/_header.scss";
+
+/* -----------------------------------------------------
+	<MAIN> styles
+*/
+
+@import "_pages/_typical.scss";
+@import "_pages/_main.scss";
+@import "_pages/_anim.scss";
+
+/* -----------------------------------------------------
+	<FOOTER> styles
+*/
+
+@import "_pages/_footer.scss";
+
+/* -----------------------------------------------------
+	media queries
+*/
+
+@media (max-width: 1600px) {
+	@import "_media/_1600.scss";
+}
+@media (max-width: 1366px) {
+	@import "_media/_1366.scss";
+}
+@media (max-width: 1200px) {
+	@import "_media/_1200.scss";
+}
+@media (max-width: 992px) {
+	@import "_media/_992.scss";
+}
+@media (max-width: 768px) {
+	@import "_media/_768.scss";
+}
+@media (max-width: 480px) {
+	@import "_media/_480.scss";
+}
